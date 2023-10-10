@@ -3,6 +3,9 @@ services:
   nginxcont:
     image: nginxappimg
     ports:
-    - "8000:80"
-volumes:
-- my_vol:/var/opt/nginx
+     - "8000:80"
+    volumes:
+     - my_vol:/var/opt/nginx
+
+ volumes:
+  my_vol:
